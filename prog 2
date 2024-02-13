@@ -1,0 +1,16 @@
+#include <iostream>
+int main()
+{
+for (int x = 100; x < 1000; x++)
+{
+int last_digit = x % 10;
+int result = (x - last_digit) / 10;
+int new_num = last_digit = 100+result;
+if (result != 0 && x == 237)
+{
+std::cout << "ishodnoe chislo x: " << x << std::endl;
+break;
+}
+}
+return 0;
+}
